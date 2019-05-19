@@ -1,0 +1,29 @@
+{
+  "name": "emp_mgmt_web_server",
+  "version": "1.0.0",
+  "description": "Employee Managment Web Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server.js",
+    "migrate:make": "knex migrate:make --knexfile ./knexfile.js",
+    "migrate:run": "knex migrate:latest --knexfile ./knexfile.js"
+  },
+  "keywords": [
+    "express",
+    "knex",
+    "postgres",
+    "migration",
+    "body-parser",
+    "cors"
+  ],
+  "author": "Karan Shrestha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "knex": "^0.17.0-next3",
+    "pg": "^7.11.0"
+  }
+}
